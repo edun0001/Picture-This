@@ -11,20 +11,19 @@
     <div class="title">
       <h1>Picture This</h1>
       <h4>My Really Cool Blog Post</h4>
-      <img src="images/museum.jpg" alt="landscape-image">
       <picture>
+        <img src="images/museum.jpg" alt="landscape-image">
         <!-- Source for viewport width less than 960px (landscape) -->
         <source media="(max-width: 960px) and (orientation: landscape)"
                 srcset="path-to-landscape-image.jpg">
       </picture>
 
+      <h1>Picture This</h1>
+      <h4>My Really Cool Blog Post</h4>
       <picture>
-        <source media="(min-width: 960px)" srcset="square-image-large.jpg">
-        <img src="square-image-small.jpg" alt="Square Image">
-      </picture>
+        <img src="images/museum.jpg" alt="square-image">
+        <!---Source for viewport width equal to or more than 960px(square)-->
+        <source media="(min-width: 960px) and (orientation: square)"
+        srcset="path-to-square-image.jpg">
+    
       
-    </div>
-
-  </header>
-</body>
-
