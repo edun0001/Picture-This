@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.title {
+  padding: 50px 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+}
+
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 960px) and (orientation: landscape) {
+  .image-container {
+    /* Landscape image for viewport width less than 960px */
+    background-image: url(path-to-landscape-image.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 960px) and (orientation: square){
+  .image-container {
+    /* Square image for viewport width 960px or larger */
+    background-image: url(path-to-square-image.jpg);
+    background-size: cover;
+    background-position: right;
+  }
+}
