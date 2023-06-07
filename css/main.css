@@ -47,10 +47,26 @@ img {
 }
 
 @media (min-width: 960px) and (orientation: square){
+
+  .image{ width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Maintain the image's aspect ratio */}
+    
   .image-container {
     /* Square image for viewport width 960px or larger */
     background-image: url(path-to-square-image.jpg);
     background-size: cover;
-    background-position: right;
+    background-position:center;
+      width: 50vw; /* Set container width to 50% of viewport width */
+      height: 50vw; /* Set container height to 50% of viewport width */
+      max-width: 50vh; /* Set maximum container width to 50% of viewport height */
+      max-height: 50vh; /* Set maximum container height to 50% of viewport height */
+      margin: 0 auto; /* Center the container horizontally */
+      display: flex;
+      justify-content: center; /* Center the image horizontally within the container */
+      align-items: center; /* Center the image vertically within the container */
+      
+     
+      
+    }
   }
-}
+
